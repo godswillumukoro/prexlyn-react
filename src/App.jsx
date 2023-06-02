@@ -1,11 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Navbar from "./components/Navbar"
-import Explore from "./pages/Explore"
-import Offers from "./pages/Offers"
-import Profile from "./pages/Profile"
-import Signin from "./pages/Signin"
-import Signup from "./pages/Signup"
-import ForgotPassword from "./pages/ForgotPassword"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import Navbar from "./components/Navbar";
+import Explore from "./pages/Explore";
+import Offers from "./pages/Offers";
+import Profile from "./pages/Profile";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
+import ForgotPassword from "./pages/ForgotPassword";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -21,10 +23,11 @@ function App() {
         </Routes>
         <Navbar />
       </Router>
+      <ToastContainer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
 
-6.467476999524396, 3.450042846799577
+6.467476999524396, 3.450042846799577;
